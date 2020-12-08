@@ -38,9 +38,9 @@ function renderData(req, res, next){
 }
 
 // turning server on
-function start(PORT) {
+// function start(PORT) {
   app.listen(PORT, () => console.log(`server is listening on ${PORT}`));
-}
+// }
 
 module.exports = {
   app: app,
