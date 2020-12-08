@@ -4,7 +4,7 @@
 require('dotenv').config();
 const express = require('express'); // server
 const app = express();
-const PORT = process.env.PORT || 3000;
+// const PORT = process.env.PORT || 3001;
 
 // local files
 const notFoundHandler = require('./handlers/404');
@@ -38,11 +38,11 @@ function renderData(req, res, next){
 }
 
 // turning server on
-// function start(PORT) {
+function start(PORT) {
   app.listen(PORT, () => console.log(`server is listening on ${PORT}`));
-// }
+}
 
-// module.exports = {
-//   app: app,
-//   start: start
-// }
+module.exports = {
+  app: app,
+  start: start
+};
