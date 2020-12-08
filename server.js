@@ -42,7 +42,7 @@ function renderData(req, res, next){
   app.listen(PORT, () => console.log(`server is listening on ${PORT}`));
 // }
 
-module.exports = {
-  app: app,
-  start: start
-}
+// module.exports = {
+//   app: app,
+//   start: start
+// }
