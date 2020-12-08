@@ -1,7 +1,7 @@
-'use strict';
+// 'use strict';
 
-require('dotenv').config();
+// require('dotenv').config();
 
-const server = require('./server');
+// const server = require('./server');
 
-server.start(3001);
+// server.start(3001);
