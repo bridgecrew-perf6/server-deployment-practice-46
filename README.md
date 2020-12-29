@@ -1,3 +1,39 @@
+# Lab - Class 16 (built with lab 01; see below)
+
+## Project: AWS Cloud Servers -- Deploy a server via Elastic Beanstalk
+
+### Author: Nathan Cox
+
+### Links
+
+- [GUI Deploy](http://cf401lab16-env.eba-tmmz2p7h.us-east-2.elasticbeanstalk.com/)
+- [CLI Deploy](http://server-deployment-practice-dev.us-west-2.elasticbeanstalk.com/)
+
+### Process
+
+#### Deploying via GUI
+
+- zip up server files sans node_modules and .env
+- navigate to elastic beanstalk
+- click on create application
+- choose node.js as your platform (opting for the latest version)
+- upload zipped files
+- click create application
+- if health check passes, click on your application's url
+
+#### Deploying via CLI
+
+- Update brew
+- download AWS
+- eb init
+- eb create
+- follow prompts (defaults)
+- beware of using code-commit, because it might throw an insurmountalbe type error
+- eb deploy
+- eb open
+
+---
+
 # LAB - Class 01
 
 ## Project: Server Deployment Practice
